@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <h1>Student Registration Form</h1>
+
+    <form>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      /><br /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /><br /><br />
+
+      <label>Gender:</label> <br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label> <br />
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label> <br />
+      <br />
+
+      <label for="address">Address:</label> <br />
+      <textarea
+        id="address"
+        name="address"
+        rows="4"
+        cols="50"
+        placeholder="Enter your Residential Address..."
+      ></textarea>
+      <br />
+      <br />
+
+      <label for="number">Telephone:</label>
+      <input
+        type="tel"
+        id="number"
+        name="number"
+        placeholder="Enter your telephone number"
+        required
+      />
+      <br /><br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <br /><br />
+
+      <label>Course:</label> <br />
+      <input type="checkbox" id="web" name="course" value="web" />
+      <label for="web">Web Development</label> <br />
+      <input type="checkbox" id="python" name="course" value="python" />
+      <label for="python">Python</label> <br />
+      <input type="checkbox" id="database" name="course" value="database" />
+      <label for="database">Database</label> <br />
+      <input
+        type="checkbox"
+        id="entrepreneur"
+        name="course"
+        value="entrepreneur"
+      />
+      <label for="entrepreneur">Entrepreneurship</label> <br />
+      <br />
+
+      <button type="submit" name="register">Register</button>
+      <button type="button" name="cancel">Cancel</button>
+    </form>
+  </body>
+</html>
